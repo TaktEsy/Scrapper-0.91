@@ -1,0 +1,23 @@
+Scrapper_v0.91/
+│
+├── main.py                      # Main application entry point (Tkinter GUI + orchestration)
+│
+├── modules/                     # Python package containing all modules
+│   ├── __init__.py              # Empty, marks the directory as a package
+│   ├── config.py                # All settings (URL, headers, page ranges, delays, router credentials, selectors, retry limits)
+│   ├── logger.py                # File and console logging setup
+│   ├── network.py               # Page fetching (cloudscraper + ban handling + invokes turnstile_solver and router_reboot)
+│   ├── parser.py                # Extracts data-id attributes from HTML
+│   ├── storage.py               # Saves collected IDs to TXT files (detailed and simple)
+│   ├── ip_utils.py              # Retrieves current external IP (via api.ipify.org)
+│   ├── turnstile_solver.py      # Solves Cloudflare Turnstile captcha using Selenium (Edge browser)
+│   ├── router_reboot.py         # Changes IP by reconnecting router's WAN (Selenium, router admin login)
+│   └── user_agent.py            # Generates random User-Agent strings
+│
+├── drivers/                     # Local EdgeDriver (msedgedriver.exe) – manually downloaded
+│
+├── logs/                        # Log files (auto-created, log_YYYYMMDD.txt)
+│
+├── output/                      # Output files (auto-created, ids_*_simple.txt and ids_*.txt)
+│
+└── requirements.txt             # Python dependencies
