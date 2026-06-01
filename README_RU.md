@@ -21,7 +21,7 @@
 (краткое описание алгоритма)
 
 ## 🖼️ Скриншоты
-(добавьте картинки)
+<img width="755" height="686" alt="image" src="https://github.com/user-attachments/assets/7e673035-8522-4851-a45d-adaab23a6ca5" />
 
 ## 📄 Лицензия
 MIT
